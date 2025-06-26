@@ -1,0 +1,170 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: #f6f8fa;
+  color: #222;
+}
+
+.container {
+  max-width: 480px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.01em;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  border: 1.5px solid #d0d7de;
+  resize: vertical;
+  margin-bottom: 1rem;
+  background: #f9fafb;
+  transition: border 0.2s;
+}
+
+textarea:focus {
+  border: 2px solid #0078d4;
+  outline: none;
+  background: #fff;
+}
+
+.button-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+button {
+  flex: 1;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.7rem;
+  background: #0078d4;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,120,212,0.08);
+}
+
+button[disabled] {
+  background: #b3c6e0;
+  cursor: not-allowed;
+}
+
+button:active {
+  background: #005fa3;
+}
+
+.feedback-section {
+  margin-top: 1.2rem;
+  min-height: 60px;
+}
+
+.feedback {
+  background: #e6f4ea;
+  border-left: 4px solid #00b87c;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  font-size: 1.08rem;
+  color: #1a3c34;
+  margin-bottom: 0.5rem;
+}
+
+.error {
+  color: #b00020;
+  background: #ffeaea;
+  border-left: 4px solid #b00020;
+  border-radius: 0.7rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 98vw;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  header h1 {
+    font-size: 1.3rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+  .feedback {
+    font-size: 1rem;
+  }
+}
